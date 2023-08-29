@@ -1,0 +1,15 @@
+NVIM config:
+
+.config/nvim file
+
+to edit init.lua:
+
+open init.lua command:
+:call mkdir(stdpath("config"),"p")
+
+:exe "edit" stdpath("config") . "/init/lua"
+
+:w
+
+now you can easily type:
+:edit $MYVIMRC
