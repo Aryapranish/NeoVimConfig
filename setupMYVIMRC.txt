@@ -45,3 +45,8 @@ inside arya/ create remap.lua file to remap things.
 
 Added Packer Sync to sync packages
 added telescope under plugin/telescope.lua + added keymaps to it to search for things
+
+Added colors.lua -> after/plugin/colors.lua
+
+wrote a function called ColorMyPencil() to set the color scheme
+
