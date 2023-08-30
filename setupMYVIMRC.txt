@@ -13,3 +13,27 @@ open init.lua command:
 
 now you can easily type:
 :edit $MYVIMRC
+
+vim.keymap.set({mode},{lhs},{rhs},{opts})
+
+{mode} - mode is where the keybinding should execute. Eg:
+	-> n: Normal mode
+	-> i: insert mode
+	-> x: Visual mode
+	-> s: Selection mode
+	-> v: Visual + selection mode
+	-> t: Terminal mode
+	-> o: Operator-pending
+	-> '': n + v + o
+
+{lhs} - the key to bind
+
+{rhs} - the key to execute
+
+{opts} - lua table (place to store several values in one place, like a dictionary)
+	-> desc - string that describes what the keybinding does
+	-> remap - Boolean that determines if the keymap is recursive. Default is false. Note to self research more on this.
+	-> buffer - Boolean or a number. Keybinding will only be effective in the current file if set to true.
+	-> silent - Boolean to show message or not. Default is false
+Eg:- 
+vim.keymap.set('n','<space>w','<cmd>write<CR>', {desc='Save'})
