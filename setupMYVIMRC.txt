@@ -37,3 +37,9 @@ vim.keymap.set({mode},{lhs},{rhs},{opts})
 	-> silent - Boolean to show message or not. Default is false
 Eg:- 
 vim.keymap.set('n','<space>w','<cmd>write<CR>', {desc='Save'})
+
+
+created ./lua/arya/init.lua file 
+require directory arya in the nvim directory's init.lua file
+inside arya/ create remap.lua file to remap things. 
+
