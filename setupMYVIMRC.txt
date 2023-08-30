@@ -43,3 +43,5 @@ created ./lua/arya/init.lua file
 require directory arya in the nvim directory's init.lua file
 inside arya/ create remap.lua file to remap things. 
 
+Added Packer Sync to sync packages
+added telescope under plugin/telescope.lua + added keymaps to it to search for things
